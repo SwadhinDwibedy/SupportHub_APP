@@ -22,6 +22,6 @@ object EmployeeNavRoutes {
 val employeeBottomNavItems = listOf(
     BottomNavItem(label = "Home", icon = Icons.Outlined.Home, route = EmployeeNavRoutes.Home),
     BottomNavItem(label = "Tickets", icon = Icons.Outlined.ConfirmationNumber, route = EmployeeNavRoutes.Tickets),
-    BottomNavItem(label = "Chat", icon = Icons.Outlined.ChatBubbleOutline, route = EmployeeNavRoutes.Chat),
+//    BottomNavItem(label = "Chat", icon = Icons.Outlined.ChatBubbleOutline, route = EmployeeNavRoutes.Chat),
     BottomNavItem(label = "Profile", icon = Icons.Outlined.PersonOutline, route = EmployeeNavRoutes.Profile)
 )

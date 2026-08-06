@@ -20,7 +20,7 @@ object AgentNavRoutes {
 val agentBottomNavItems = listOf(
     BottomNavItem(label = "Home", icon = Icons.Outlined.Home, route = AgentNavRoutes.Home),
     BottomNavItem(label = "Queue", icon = Icons.Outlined.SupportAgent, route = AgentNavRoutes.Queue),
-    BottomNavItem(label = "Chat", icon = Icons.Outlined.ChatBubbleOutline, route = AgentNavRoutes.Chat),
+//    BottomNavItem(label = "Chat", icon = Icons.Outlined.ChatBubbleOutline, route = AgentNavRoutes.Chat),
     BottomNavItem(label = "Perf", icon = Icons.Outlined.Timeline, route = AgentNavRoutes.Performance),
     BottomNavItem(label = "Profile", icon = Icons.Outlined.PersonOutline, route = AgentNavRoutes.Profile)
 )

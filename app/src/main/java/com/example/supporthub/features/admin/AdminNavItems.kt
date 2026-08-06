@@ -20,6 +20,6 @@ val adminBottomNavItems = listOf(
     BottomNavItem(label = "Home", icon = Icons.Outlined.Home, route = AdminNavRoutes.Home),
     BottomNavItem(label = "Users", icon = Icons.Outlined.SupervisorAccount, route = AdminNavRoutes.Users),
     BottomNavItem(label = "Tickets", icon = Icons.Outlined.ConfirmationNumber, route = AdminNavRoutes.Tickets),
-    BottomNavItem(label = "Analytics", icon = Icons.Outlined.Analytics, route = AdminNavRoutes.Analytics),
+//    BottomNavItem(label = "Analytics", icon = Icons.Outlined.Analytics, route = AdminNavRoutes.Analytics),
     BottomNavItem(label = "Profile", icon = Icons.Outlined.PersonOutline, route = AdminNavRoutes.Profile)
 )

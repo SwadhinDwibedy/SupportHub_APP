@@ -152,7 +152,7 @@ fun AdminProfileScreen(
                 PremiumStatsSection(state = state)
                 PersonalInformationCard(state = state)
                 ProfessionalInformationCard(state = state)
-                AvailabilityCard(state = state)
+//                AvailabilityCard(state = state)
                 OutlinedButton(
                     onClick = { showLogoutConfirm = true },
                     modifier = Modifier.fillMaxWidth(),
@@ -417,24 +417,24 @@ private fun ProfessionalInformationCard(state: AdminProfileUiState) {
         items.forEach { item -> PremiumInfoRow(item) }
     }
 }
-
-@Composable
-private fun AvailabilityCard(state: AdminProfileUiState) {
-    InfoCard(title = "Availability") {
-        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(14.dp)) {
-            Surface(shape = CircleShape, color = if (state.isAvailable) AdminProfileSuccessSoft else AdminProfileDangerSoft) {
-                Box(modifier = Modifier.size(56.dp), contentAlignment = Alignment.Center) {
-                    Surface(modifier = Modifier.size(16.dp), shape = CircleShape, color = if (state.isAvailable) AdminProfileSuccess else AdminProfileDanger) {}
-                }
-            }
-            Column(modifier = Modifier.weight(1f)) {
-                Text(if (state.isAvailable) "Online" else "Away", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
-                Text(state.availabilityMessage, color = AdminProfileSubtext)
-            }
-            Switch(checked = state.isAvailable, onCheckedChange = {}, enabled = false)
-        }
-    }
-}
+//
+//@Composable
+//private fun AvailabilityCard(state: AdminProfileUiState) {
+//    InfoCard(title = "Availability") {
+//        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(14.dp)) {
+//            Surface(shape = CircleShape, color = if (state.isAvailable) AdminProfileSuccessSoft else AdminProfileDangerSoft) {
+//                Box(modifier = Modifier.size(56.dp), contentAlignment = Alignment.Center) {
+//                    Surface(modifier = Modifier.size(16.dp), shape = CircleShape, color = if (state.isAvailable) AdminProfileSuccess else AdminProfileDanger) {}
+//                }
+//            }
+//            Column(modifier = Modifier.weight(1f)) {
+//                Text(if (state.isAvailable) "Online" else "Away", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+//                Text(state.availabilityMessage, color = AdminProfileSubtext)
+//            }
+//            Switch(checked = state.isAvailable, onCheckedChange = {}, enabled = false)
+//        }
+//    }
+//}
 
 @Composable
 private fun InfoCard(title: String, content: @Composable () -> Unit) {
